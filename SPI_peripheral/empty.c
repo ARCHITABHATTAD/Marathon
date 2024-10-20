@@ -1,3 +1,7 @@
+// mode- pripheral
+//cs-cs1
+//pinmuz - spi1 , 9 7 8 17
+
 #include "ti_msp_dl_config.h"
 #include "stdio.h"
 volatile uint8_t flag = 0;
@@ -20,7 +24,8 @@ int main(void)
             __WFI();
         }
         DL_SPI_fillTXFIFO8(SPI_0_INST, &gTXPacket[0], SPI_Psize);
-        while (DL_SPI_isBusy(SPI_0_INST));
+        while (DL_SPI_isBusy(SPI_0_INST))
+            ;
 
         flag = 0;
     }

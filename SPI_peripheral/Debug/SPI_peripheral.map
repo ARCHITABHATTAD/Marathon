@@ -1,7 +1,7 @@
 ******************************************************************************
             TI ARM Clang Linker PC v3.2.2                      
 ******************************************************************************
->> Linked Sat Oct 19 14:59:57 2024
+>> Linked Sat Oct 19 12:26:27 2024
 
 OUTPUT FILE NAME:   <SPI_peripheral.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00001385
